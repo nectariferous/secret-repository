@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Donation</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS Bundle (including Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Import Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Hind Siliguri', sans-serif; /* Use Hind Siliguri font */
+    }
+    .navbar-nav {
+      margin: auto;
+      display: inline;
+      justify-content: center;
+      text-align:center;
+    }
+    #home, #slider, #link-preview, #table, #contact {
+      text-align: center; /* Center align content */
+    }
+     /* Set the map container to be centered */
+        .map-container {
+            text-align: center;
+        }
+
+        /* Make the map responsive */
+        .map-container iframe {
+            width: 100%;
+            height: 400px; /* Adjust height as needed for larger screens */
+            max-width: 600px; /* Limit maximum width */
+            border: 0;
+            padding: 10px;
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .map-container iframe {
+                height: 300px; /* Adjust height for smaller screens */
+            }
+        }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-dark bg-success">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">নোটিশ </a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#slider"> কিভাবে বিকাশে দান করবেন </a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#table"> যারা যারা দান করেছেন </a>
+        </li>
+        <!---li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li--->
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Home Section -->
+  <section id="home" class="container py-5">
+    <h1>আসসালামু আলাইকুম</h1> 
+    <p><b>QR CODE</b>  স্ক্যান করার জন্য আপনাকে অসংখ্য ধন্যবাদ</p>
+    <h2>এই সাইট টি তৈরি করার মূল উদ্দেশ্যই হচ্ছে <b>রহিমপুর জামে মসজিদের</b>  টয়লেটের জন্য টিস্যুর নিশ্চিত করা</h2>
+    <h3>আপনি চাইলে টিস্যু কিনে দান করতে পারন  <b>25 tk</b> দান করতে পারন </h3>
+    <B><p>আপনি যদি দান করতে আগ্রহী হন তাহলে নিচের ছবিগুলো দেখে পেমেন্ট করতে পারেন</p>
+    <p>আর যদি আগ্রহী না হয়ে থাকেন তাহলেও QR CODE টি শেয়ার করে অন্যকে সুযোগ করে দেওয়ার জন্য অনুরোধ করছি</p></b>
+    <BR>  <BR>
+      <marquee behavior="scroll" direction="left" scrollamount="4" style="font-size: 30PX; padding: 20px; background: #A5EAC9;">
+     সাইটটি আপডেট করার জন্য কাজ চলতেছে ... আপনারা আপনাদের গুরুত্বপূর্ণ মতামত প্রদান করুন <a class=" " href="https://web.facebook.com/Rahimpurjamemosjid/"> এই লিংকে </a>
+  
+    </marquee>
+  </section>
+  <!-- Facebook Page Link -->
+    <div style="text-align: center;">
+        <a href="https://web.facebook.com/Rahimpurjamemosjid/" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #3b5998; color: #fff; text-decoration: none; border-radius: 5px;">Visit Our Facebook Page</a>
+    </div>
+
+  <!-- Slider Section -->
+  <section id="slider" class="container py-5">
+    <h1> কিভাবে বিকাশে দান করবেন </h1>
+    <br>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.ibb.co/7WLKwT8/P1.jpg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/WKQxxtp/P2.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/dcZvKyy/P3.jpg" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/HrGybGb/P4.jpg" class="d-block w-100" alt="Slide 4">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Link Preview Section -->
+  <section id="link-preview" class="container py-5">
+  
+    <center>
+      <div style="width: 100%; height: 900px; overflow: hidden;">
+        <iframe src="https://shop.bkash.com/hasan01605550828/pay/bdt25/xbyZe2" width="100%" height="900%" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </center>
+  </section>
+
+  <!-- Table Section -->
+  <section id="table" class="container py-5">
+    <h1> যারা যারা দান করেছেন </h1>
+    <div class="table-responsive">
+      <div class="mb-3">
+        <input type="text" id="searchInput" class="form-control mb-2" placeholder="Search...">
+        <button id="searchButton" class="btn btn-primary mb-2">খুঁজুন</button>
+       
+      </div>
+      <table id="example" class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Serial</th>
+            <th scope="col"> নাম </th>
+            <th scope="col"> ঠিকানা </th>
+            <th scope="col">মোবাইল নম্বর </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Hasan </td>
+            <td>Hazi Bari </td>
+            <td>01723***809</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jane Smith</td>
+            <td>Rahimpur</td>
+            <td>018234***50</td>
+          </tr>
+          <!-- Add more rows if needed -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+  
+    <!-- Embedded Google Map -->
+   <div class="map-container">
+     <center>   <h1> রহিমপুর জামে মসজিদ , রহিমপুর। </h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1482.177637504731!2d90.76660516187138!3d22.360062808279043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ab3bfda56ce8b3%3A0x443de08629b3f2c8!2z4Kaw4Ka54Ka_4Kau4Kaq4KeB4KawIOCmnOCmvuCmruCnhyDgpq7gprjgppzgpr_gpqYgLCDgprDgprngpr_gpq7gpqrgp4HgprDgpaQ!5e1!3m2!1sen!2sbd!4v1707805951448!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </center> 
+        </div>
+  
+    
+  <!-- JavaScript for Search and Filter -->
+  <script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+      var searchText = document.getElementById('searchInput').value.toLowerCase();
+      filterTable(searchText);
+    });
+
+    document.getElementById('filterButton').addEventListener('click', function() {
+      var startDate = document.getElementById('startDate').value;
+      var endDate = document.getElementById('endDate').value;
+      filterTableByDate(startDate, endDate);
+    });
+
+    function filterTable(searchText) {
+      var rows = document.querySelectorAll('tbody tr');
+
+      rows.forEach(function(row) {
+        var shouldHide = true;
+        row.querySelectorAll('td').forEach(function(cell) {
+          if (cell.textContent.toLowerCase().indexOf(searchText) > -1) {
+            shouldHide = false;
+          }
+        });
+
+        if (shouldHide) {
+          row.style.display = 'none';
+        } else {
+          row.style.display = '';
+        }
+      });
+    }
+
+    function filterTableByDate(startDate, endDate) {
+      var rows = document.querySelectorAll('tbody tr');
+
+      rows.forEach(function(row) {
+        var rowDate = row.querySelector('td:nth-child(5)').textContent.trim();
+        if (startDate && endDate) {
+          if (rowDate < startDate || rowDate > endDate) {
+            row.style.display = 'none';
+          } else {
+            row.style.display = '';
+          }
+        } else {
+          row.style.display = '';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+  
